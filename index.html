@@ -9,6 +9,16 @@
 <body>
     <h1>你们好</h1>
     <h2>看到这条信息就给我点个赞吧</h2>
-    <button onclick="alert('你好帅')">赞</button>
+    <h3 id="you">点赞了吗？</h3>
+    <button id="add">赞</button>
+    <script>
+        let button = document.getElementById("add")
+        let text = document.getElementById("you")
+        button.onclick = function()
+        {
+            // alert("nb")
+            text.innerText = '你好帅！！'
+        }
+    </script>
 </body>
 </html>
